@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* nav bar css  */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: black;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    color:#0B5ED7;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover , .navbar-expand-lg .navbar-nav .nav-link:hover  {
+    color:#0B5ED7;
+}
+/* start home css */
+.home .slide-one {
+    background:linear-gradient(rgba(0,0,0,.5) ,rgba(0,0,0,.5)), url(../images/bg-image-28.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.home .slide-two {
+    background:linear-gradient(rgba(0,0,0,.5) ,rgba(0,0,0,.5)), url(../images/bg-image-29.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home .carousel-control-prev{
+   width:45px;
+   height:50px;
+   border: solid 1px white;
+   left:0;
+   top: 43%;
+   transition: all ease-in-out .5s;
+
+}
+.home .carousel-control-next{
+    width:45px;
+    height:50px;
+    border: solid 1px white;
+    left:0;
+    top: 35%;
+    transition: all ease-in-out .5s;
+}
+.home .carousel-control-prev:hover ,.home .carousel-control-next:hover{
+    background-color: white;
+    color: black;
+ 
+ }
+.home .icon-box {
+    width: 30px;
+    height: 40px;
+    top:25%;
+    left :-5px;
+    background-color:#434343;
+    padding: 10px 0px 20px ;
+    border-radius: 5px;
+}
+.home .down-icon{
+    position: absolute;
+    padding: 30px 20px;
+    border-radius:20px;
+    width: 30px;
+    height: 30px;
+    top: 80%;
+    left: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.home .down-icon:hover{
+    border: 1px solid var(--main-color);
+}
+.home .slide-content h1{
+    font-size: 80px;
+}
+/* end home css */
+
+/*start about css */
+.about{
+    margin: 50px  0;
+    padding:30px 0 ;
+    position: relative;
+    
+}
+
+.about span::before{
+    content: " |";
+    animation: infinite 4s alternate typing;
+    color: #0B5ED7;
+}
+@keyframes typing {
+    0%{
+        content: " we|";
+    }
+    5%{
+        content: " webs|";
+    }
+    10%{
+        content: " websit|";
+    }
+    15%{
+        content: " websites|";
+    }
+    20%{
+        content: " websit|";
+    }
+    25%{
+        content: " webs|"; 
+    }
+    30%{
+        content: " we|";
+    }
+    35%{
+        content: " |";
+    }
+    40%{
+        content: " ap|";
+    }
+    45%{
+        content: " apps|";
+    }
+    50%{
+        content: " ap|";
+    }
+    55%{
+        content: " |";
+    }
+    60%{
+        content: " So|";
+    }
+    65%{
+        content: " Soft|";
+    }
+    70%{
+        content: " Softwa|";
+    }
+    75%{
+        content: " Software|";
+    }
+    80%{
+        content: " Softwa|";
+    }
+    85%{
+        content: " Soft|";
+    }
+    90%{
+        content: " So|";
+    }
+    95%{
+        content: " S|";
+    }
+    100%{
+        content: " |";
+    }
+
+}
+.about .btn{
+    color:black;
+    border-color: black;
+}
+.about .btn:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+/* end about css */
+/* start team css */
+.team{
+    margin: 50px  0;
+    padding:30px 0 ;   
+}
+
+.team .title h2{
+    font-size:60px ;
+    font-weight: bolder;
+    opacity: .3;
+}
+.team .title h3{
+    font-size:40px ;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.team .team-content{
+    overflow: hidden;
+}
+.team .layer{
+    position: absolute;
+    background-color: rgba(24,200,221,.7);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.team .team-content:hover .layer{
+    top: 0;
+}
+.team .layer .team-icon{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    
+}
+.team .layer .img-content{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    
+}
+/* end team css */
+/* start services css */
+.services{
+    /* margin: 50px  0; */
+    padding: 80px 0 ;
+    background-color: #636363;
+}
+.services .lead
+{
+    font-size: 17px;
+}
+.services .title h2{
+    font-size:60px ;
+    font-weight: bolder;
+    opacity: .3;
+}
+.services .title h3{
+    font-size:40px ;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* end services css  */
+/* start pricing css */
+
+.pricing{
+    /* margin: 50px  0; */
+    padding: 80px 0 ;
+    background-color: #F7F7F7;
+}
+
+.pricing .title h2{
+    font-size:60px ;
+    font-weight: bolder;
+    opacity: .3;
+    text-align: center;
+}
+.pricing .title h3{
+    font-size:40px ;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.pricing .pricing-table{
+    background-color: white;
+}
+.pricing .gold{
+    transform: scale(1.1);
+}
+.pricing button{
+    background-color: #00C3DA;
+    color: white;
+}
+.pricing .featured-label{
+    background-color: #00C3DA;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+.pricing .price{
+    position: relative;
+    margin-bottom: 20px;
+}
+.pricing .price::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    padding: 1px;
+    background-color: #00C3DA;
+    margin-top: 10px;
+    top: 100%;
+    left: 0;
+}
+/* end pricing css */
+/* start testmional css */
+
+.testmional{
+    padding: 80px 0 ;
+    background-color: #F7F7F7;  
+    position: relative; 
+}
+.testmional .testimonial-content{
+    background-color: white;
+    position: relative;
+    padding: 80px 0 ;
+    overflow:visible;
+}
+.testmional img{
+    width: 10%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index: 100;
+}
+.testmional .carousel-control-prev i ,.testmional .carousel-control-next i{
+    color: #0B5ED7;
+}
+.testmional .carousel-indicators button{
+    width: 2%;
+    color: #0B5ED7;
+    background-color: #DEDEDE;
+    position: static;
+    padding: 10px 5px;
+    top: 200px;
+}
+.testmional .carousel-indicators button.active{
+    color: #DEDEDE;
+    background-color: #0B5ED7;
+}
+/* start contact css */
+.contact .title h2{
+    font-size:60px ;
+    font-weight: bolder;
+    opacity: .3;
+}
+.contact .title h3{
+    font-size:40px ;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.contact .form-group button {
+    background-color: #00C3DA;
+    color: white;
+}
+
+/* end contact css */
